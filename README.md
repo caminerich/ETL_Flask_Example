@@ -21,8 +21,6 @@ Per "CTVA Data Coding Exercise.txt"
 ## Additional Documentation
 - Weather stations data dates are between 1985-01-01 to 2014-12-31
 - Weather station states are the first 7 letters of the filename (ie USC00025) and correspond to Nebraska, Iowa, Illinois, Indiana, or Ohio
-- Unit testing provided 
-- Testing files, labeled "test" with .TXT extension, provided to test code without ingesting large amounts of data. Remember to DROP TABLE before ingesting production data as data will not overwrite. 
 
 ## Future Improvements 
 - Concurrency to increase speed that raw weather TXT data is ingested in SQLlite database 
