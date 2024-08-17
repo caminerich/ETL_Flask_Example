@@ -29,6 +29,7 @@ def insert_data(conn, date, max_temp_c, min_temp_c, precip, filename):
     conn.commit()
     return cur.lastrowid
 
+# Function to count rows in weather_date
 def query_row_count(conn, filename):
     sql = f'''SELECT COUNT(*) FROM weather_data WHERE filename=? '''
     cur = conn.cursor()
@@ -49,7 +50,6 @@ def log_transaction(conn, start_time, end_time, duration, record_count, filename
         print(f"Transaction logged successfully: {filename}, {record_count} records in {duration} time")
 
 # Main function to parse text files and insert data into SQLite
-# Your code should also produce log output indicating start and end times and number of records ingested.
 def main():
     database = r"/Users/carrieminerich/Desktop/codderry/weather.db"  # Path to SQLite database file
     directory = r'//Users//carrieminerich//Desktop//codderry//code-challenge-template//wx_data'
