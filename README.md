@@ -2,6 +2,7 @@
 Colaberry Data Engineer Challenge
 Per "CTVA Data Coding Exercise.txt"
 - Weather files available here: https://github.com/corteva/code-challenge-template
+- Challenge instructions here: CTVA Data Coding Exercise.txt
 
 ## open_and_parse.py
 - This script creates a SQLite table called "weather_data" and ingests TXT weather station files from local machine
