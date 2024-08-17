@@ -62,7 +62,7 @@ def query_stats(conn, year=None, station_id=None, limit=10, offset=0):
     stats_data = cur.fetchall()
     return stats_data
 
-# Example route
+# route
 @app.route('/')
 def index():
     return "Welcome to the Weather Data API!"
