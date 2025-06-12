@@ -8,8 +8,10 @@ Each line in the file contains 4 records separated by tabs:
 3. The minimum temperature for that day (in tenths of a degree Celsius)
 4. The amount of precipitation for that day (in tenths of a millimeter)
 Missing values are indicated by the value -9999.\
+
 **Problem 1 - Data Modeling**
 Choose a database to use for this coding exercise (SQLite, Postgres, etc.). Design a data model to represent the weather data records. If you use an ORM, your answer should be in the form of that ORM's data definition format. If you use pure SQL, your answer should be in the form of DDL statements\
+
 **Problem 2 - Ingestion**
 Write code to ingest the weather data from the raw text files supplied into your database, using the model you designed. Check for duplicates: if your code is run twice, you should not end up with multiple rows with the same data in your database. Your code should also produce log output indicating start and end times and number of records ingested.
 
@@ -33,6 +35,7 @@ Your answer should include all files necessary to run your API locally, along wi
 **Extra Credit - Deployment**
 (Optional.) Assume you are asked to get your code running in the cloud using AWS. What tools and AWS services would you use to deploy the API, database, and a scheduled version of your data ingestion code? Write up a description of your approach.
 
+# Answers
 ## open_and_parse.py
 - This script creates a SQLite table called "weather_data" and ingests TXT weather station files from local machine
 - This script also creates a SQLite table called "transaction_log" that records the start, end, and duration time of each record as it is ingested into the 'weather_data' table
