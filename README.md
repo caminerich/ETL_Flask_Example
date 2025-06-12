@@ -1,4 +1,4 @@
-# ETL, SQLite3, Flask example
+# ETL, SQLite3, Flask challenge
 Per "CTVA Data Coding Exercise.txt"
 - Weather files available here: https://github.com/corteva/code-challenge-template
 - Challenge instructions here: CTVA Data Coding Exercise.txt
