@@ -1,4 +1,4 @@
-# ETL, SQLite3, Flask challenge
+# Weather data ETL, SQLite3, Flask challenge
 ## Challenge:
 **Weather Data Description**
 The wx_data directory has files containing weather data records from 1985-01-01 to 2014-12-31. Each file corresponds to a particular weather station from Nebraska, Iowa, Illinois, Indiana, or Ohio.
